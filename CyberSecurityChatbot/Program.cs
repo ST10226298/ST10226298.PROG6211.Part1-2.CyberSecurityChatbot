@@ -18,10 +18,10 @@ namespace CyberSecurityChatbot
             // Display ASCII art immediately
             ShowAsciiArt();
 
-            // Wait for audio to finish before continuing
+            // Waits for audio to finish before continuing
             playAudioTask.Wait();
 
-            // Ask for user name
+            // Ask for user name of user
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("\nPlease enter your name: ");
             Console.ResetColor();
@@ -40,7 +40,7 @@ namespace CyberSecurityChatbot
 
             Console.ResetColor();
 
-            // Main chat loop
+            // Main chatbot loop
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
